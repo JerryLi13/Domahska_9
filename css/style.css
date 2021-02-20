@@ -179,9 +179,10 @@ body {
 	max-width: 1920px;
 	min-width: 725px;
 	height: 918px;
-	background: url("../img/gorod.png") center/cover no-repeat;
+	background: url('../img/sun.svg') 1350px 40px/30% 30% no-repeat, url("../img/gorod.png") center/cover no-repeat;
 	position: relative;
 }
+
 .bus {
 	max-width: 720px;
 	width: 100%;
