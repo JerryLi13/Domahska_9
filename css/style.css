@@ -53,7 +53,6 @@ body {
 	margin: 0 auto;
 }
 .header__menu {
-
 }
 .header__list {
 	font-size: 0;
@@ -69,7 +68,7 @@ body {
 	margin-right: 0px;
 }
 .header__list > li:hover .header__sub-list {
-	display: inline-block;
+	display: block;
 }
 .header__list > li:hover .header__link {
 	color: yellow;
@@ -79,7 +78,6 @@ body {
 	right: 0;
 }
 
-
 .header__link {
 	font-size: 20px;
 	padding: 10px 0px;
@@ -88,15 +86,19 @@ body {
 	font-weight: 700;
 	color: red;
 }
+
 /*====== sub-list =====*/
 .header__sub-list {
 	display: none;
 	position: absolute;
 	min-width: 136px;
 	background-color: yellow;
-	padding: 15px;
+	padding: 15px 0px;
 	left: 0;
 	top: 100%;
+}
+.header__sub-list > li {
+	display: inline-block;
 }
 .header__sub-list li {
 	margin: 0px 0px 10px 0px;
@@ -108,6 +110,7 @@ body {
 .header__sub-link {
 	font-size: 18px;
 	color: teal;
+	padding: 0px 15px;
 }
 .header__sub-link:hover {
 	text-decoration: underline;
@@ -115,63 +118,45 @@ body {
 	transition: 0.3s;
 }
 
-
-
 /*====== sub-list1 =====*/
-.header__sub-list:hover .header__sub-list1 {
-	display: inline-block;
-}
 .header__sub-list1 {
 	display: none;
 	position: absolute;
-	min-width: 120px;
-	left: 136px;
-	top: 26%;
+	top: 0;
+	left: 100%;
+	min-width: 140px;
 	padding: 15px;
-	background-color: yellow;
-	z-index: 5;
+	background: rgb(95, 218, 13);
 }
-.header__sub-list:hover .header__sub-list2 {
+.header__sub-list > li:hover .header__sub-list1 {
 	display: inline-block;
 }
 .header__sub-list2 {
 	display: none;
 	position: absolute;
-	min-width: 120px;
-	right: 136px;
-	top: 26%;
+	top: 0;
+	left: 100%;
+	min-width: 140px;
 	padding: 15px;
-	background-color: yellow;
-	z-index: 5;
+	background: rgb(95, 218, 13);
+}
+.header__sub-list > li:nth-child(2) .header__sub-list2 {
+	left: auto;
+	right: 100%;
 }
 
-.header__sub-list1 > li {
+.header__sub-list > li:hover .header__sub-list2 {
 	display: inline-block;
-	margin: 0px 0px 10px 0px;
-}
-.header__sub-list1 > li:last-child {
-	margin-bottom: 0px;
-}
-.header__sub-list2 > li {
-	display: inline-block;
-	margin: 0px 0px 10px 0px;
-}
-.header__sub-list2 > li:last-child {
-	margin-bottom: 0px;
 }
 
 .header__sub-link1 {
-	font-size: 13px;
-	color: rgb(72, 39, 221);
+	font-size: 18px;
+	font-weight: 700;
+	color: rgb(8, 44, 143);
 }
-.header__sub-link1:hover {
-	font-size: 13px;
-	color: rgb(185, 39, 221);
-	transition: 0.2s;
-	text-decoration: underline;
-}
+
 /* ============== */
-.body { 
+.body {
 	position: relative;
 	top: 200px;
 	width: 820px;
