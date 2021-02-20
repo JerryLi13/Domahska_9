@@ -1,0 +1,512 @@
+/* ШРИФТЫ */
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap");
+/*ОБНУЛЯЮЩИЙ СТИЛь*/
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a :visited {
+	text-decoration: none;
+}
+a :hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+
+/*ДОМАШНЯЯ РАБОТА №9*/
+body {
+	width: 100%;
+	line-height: 1;
+	background-color: white;
+	font-family: "Akaya Kanadaka", cursive;
+}
+/* =======HEADER======= */
+.header {
+	background: rgb(12, 214, 197);
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: 10;
+}
+.header__container {
+	max-width: 80%;
+	margin: 0 auto;
+}
+.header__menu {
+
+}
+.header__list {
+	font-size: 0;
+	text-align: center;
+}
+.header__list > li {
+	position: relative;
+	display: inline-block;
+	margin: 0px 150px 0px 0px;
+	z-index: 5;
+}
+.header__list > li:last-child {
+	margin-right: 0px;
+}
+.header__list > li:hover .header__sub-list {
+	display: inline-block;
+}
+.header__list > li:hover .header__link {
+	color: yellow;
+}
+.header__list > li:last-child .header__sub-list {
+	left: auto;
+	right: 0;
+}
+
+
+.header__link {
+	font-size: 20px;
+	padding: 10px 0px;
+	display: inline-block;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: red;
+}
+/*====== sub-list =====*/
+.header__sub-list {
+	display: none;
+	position: absolute;
+	min-width: 136px;
+	background-color: yellow;
+	padding: 15px;
+	left: 0;
+	top: 100%;
+}
+.header__sub-list li {
+	margin: 0px 0px 10px 0px;
+}
+.header__sub-list li:last-child {
+	margin-bottom: 0px;
+}
+
+.header__sub-link {
+	font-size: 18px;
+	color: teal;
+}
+.header__sub-link:hover {
+	text-decoration: underline;
+	color: tomato;
+	transition: 0.3s;
+}
+
+
+
+/*====== sub-list1 =====*/
+.header__sub-list:hover .header__sub-list1 {
+	display: inline-block;
+}
+.header__sub-list1 {
+	display: none;
+	position: absolute;
+	min-width: 120px;
+	left: 136px;
+	top: 26%;
+	padding: 15px;
+	background-color: yellow;
+	z-index: 5;
+}
+.header__sub-list:hover .header__sub-list2 {
+	display: inline-block;
+}
+.header__sub-list2 {
+	display: none;
+	position: absolute;
+	min-width: 120px;
+	right: 136px;
+	top: 26%;
+	padding: 15px;
+	background-color: yellow;
+	z-index: 5;
+}
+
+.header__sub-list1 > li {
+	display: inline-block;
+	margin: 0px 0px 10px 0px;
+}
+.header__sub-list1 > li:last-child {
+	margin-bottom: 0px;
+}
+.header__sub-list2 > li {
+	display: inline-block;
+	margin: 0px 0px 10px 0px;
+}
+.header__sub-list2 > li:last-child {
+	margin-bottom: 0px;
+}
+
+.header__sub-link1 {
+	font-size: 13px;
+	color: rgb(72, 39, 221);
+}
+.header__sub-link1:hover {
+	font-size: 13px;
+	color: rgb(185, 39, 221);
+	transition: 0.2s;
+	text-decoration: underline;
+}
+/* ============== */
+.body { 
+	position: relative;
+	top: 200px;
+	width: 820px;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+.text {
+	font-size: 30px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 1px blue;
+	filter: drop-shadow(2px -3px 1px red);
+}
+/* =======block======= */
+.block {
+	width: 100%;
+}
+.container {
+	max-width: 1920px;
+	min-width: 725px;
+	height: 918px;
+	background: url("../img/gorod.png") center/cover no-repeat;
+	position: relative;
+}
+.bus {
+	max-width: 720px;
+	width: 100%;
+	margin: 0 auto;
+	margin-right: 0px;
+	position: absolute;
+	top: 630px;
+	right: 0px;
+}
+.bus__motor {
+	max-width: 80px;
+	width: 100%;
+	height: 98px;
+	border: 2px solid black;
+	border-right: none;
+	border-radius: 95px 68px 7px 60px / 116px 0px 0px 0px;
+	position: absolute;
+	top: 118px;
+	left: -80px;
+	display: block;
+	background-color: yellow;
+}
+.motor__bumper1 {
+	max-width: 34px;
+	width: 100%;
+	height: 27px;
+	border: 2px solid black;
+	border-radius: 15% 0px 0px 15%;
+	position: relative;
+	top: 69px;
+	left: -7px;
+	display: block;
+	background-color: black;
+}
+.motor__lamp {
+	max-width: 7px;
+	width: 100%;
+	height: 21px;
+	border: 1px solid black;
+	border-radius: 30% 0% 0% 30%;
+	position: relative;
+	top: 17px;
+	left: -6px;
+	display: inline-block;
+	background-color: silver;
+}
+.bus__cabin:hover .motor__lamp {
+	background-color: silver;
+	box-shadow: -15px 0px 10px yellow;
+	transition: all 0.4s;
+}
+
+.bus__cabin {
+	width: 616px;
+	height: 218px;
+	margin: 0 auto;
+	border: 2px solid black;
+	border-radius: 88px 59px 103px 30px / 27px 25px 25px 0px;
+	background-color: yellow;
+	position: relative;
+}
+.bus__cabin::before {
+	position: relative;
+	content: "";
+	top: 0px;
+	left: 0px;
+	width: 612px;
+	height: 4px;
+	background-color: black;
+	display: block;
+	margin: 20px 0px 0px 0px;
+}
+/* ===перед=== */
+.window1 {
+	max-width: 14px;
+	width: 100%;
+	height: 90px;
+	border: 2px solid black;
+	border-left: none;
+	background-color: white;
+	display: inline-block;
+	border-radius: 0% 10% 10px 0%;
+	position: absolute;
+	top: 30px;
+	left: 0px;
+}
+.window2 {
+	max-width: 64px;
+	width: 100%;
+	height: 64px;
+	border: 2px solid black;
+	background-color: white;
+	display: inline-block;
+	border-radius: 8px;
+	position: absolute;
+	top: 46px;
+	left: 30px;
+}
+
+.bus__door {
+	max-width: 80px;
+	width: 100%;
+	height: 130px;
+	border: 2px solid black;
+	opacity: 0.6;
+	border-radius: 8% 8% 48% 8% / 8% 8% 130px 8%;
+	display: inline-block;
+	position: absolute;
+	top: 40px;
+	left: 24px;
+}
+.door__door-knob {
+	max-width: 7px;
+	width: 100%;
+	height: 3px;
+	background: #000;
+	position: relative;
+	top: 66px;
+	left: 58px;
+	display: inline-block;
+}
+.step__step1 {
+	max-width: 14px;
+	width: 100%;
+	height: 8px;
+	border-radius: 40% 40% 0% 0%;
+	background: rgba(0, 0, 0, 0.815);
+	position: absolute;
+	display: inline-block;
+	top: 178px;
+	left: 74px;
+}
+.gas-tank__tank {
+	max-width: 39px;
+	width: 100%;
+	height: 28px;
+	border: 1px solid rgba(0, 0, 0, 0.699);
+	border-radius: 20%;
+	background: yellow;
+	position: absolute;
+	display: inline-block;
+	top: 160px;
+	left: 118px;
+}
+
+.text__title {
+	font-family: "Akaya Kanadaka", cursive;
+	letter-spacing: 2px;
+	font-size: 44px;
+	display: inline-block;
+	position: absolute;
+	top: 117px;
+	left: 158px;
+	background: rgb(36, 16, 0);
+	background: linear-gradient(
+		90deg,
+		rgba(36, 16, 0, 0.8491771708683473) 0%,
+		rgba(9, 102, 121, 0.7315301120448179) 27%,
+		rgba(162, 0, 255, 0.5690651260504201) 75%
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	filter: drop-shadow(3px 4px 2px black);
+}
+/*=== окна ===*/
+
+.bus__windows {
+	text-align: right;
+	font-size: 0px;
+}
+.windows__window {
+	max-width: 110px;
+	width: 100%;
+	height: 86px;
+	border: 2px solid black;
+	display: inline-block;
+	border-radius: 10%;
+	background-color: white;
+	margin-right: 8px;
+	vertical-align: top;
+	position: relative;
+	top: 4px;
+	right: 30px;
+}
+.windows__window:last-child {
+	margin-right: 0px;
+}
+.windows__window:nth-child(-n + 3):before {
+	content: "";
+	width: 106px;
+	height: 4px;
+	display: block;
+	background: #000;
+	position: relative;
+	top: 26px;
+	left: 0px;
+}
+.windows__window:nth-child(-n + 3):after {
+	content: "";
+	width: 4px;
+	height: 26px;
+	display: block;
+	background: #000;
+	position: relative;
+	top: -4px;
+	left: 52px;
+}
+
+.bus__headlights1 {
+	max-width: 10px;
+	width: 100%;
+	height: 6px;
+	border: 1px solid black;
+	display: block;
+	background-color: red;
+	position: absolute;
+	left: 108px;
+	bottom: 70px;
+}
+
+.bus__headlights2 {
+	max-width: 8px;
+	width: 100%;
+	height: 28px;
+	border: 1px solid black;
+	border-radius: 0% 15% 15% 0%;
+	display: block;
+	background-color: red;
+	position: absolute;
+	right: -5px;
+	bottom: 49px;
+}
+.bus__cabin:hover .bus__headlights2 {
+	box-shadow: 10px 1px 10px red;
+	transition: all 0.4s;
+}
+
+.bus__bumper2 {
+	max-width: 34px;
+	width: 100%;
+	height: 27px;
+	border: 2px solid black;
+	border-radius: 0% 15% 15% 0%;
+	position: absolute;
+	right: -7px;
+	bottom: 18px;
+	display: block;
+	background-color: black;
+}
+
+.wheels__radius1 {
+	max-width: 90px;
+	width: 100%;
+	height: 43px;
+	background: #000;
+	display: block;
+	position: absolute;
+	bottom: 0px;
+	left: -41px;
+	border-radius: 30% 30% 0% 0% / 90% 90% 0% 0%;
+}
+.wheels__radius2 {
+	max-width: 90px;
+	width: 100%;
+	height: 43px;
+	background: #000;
+	display: block;
+	position: absolute;
+	bottom: 0px;
+	right: 121px;
+	border-radius: 30% 30% 0% 0% / 90% 90% 0% 0%;
+}
+.wheel__circle {
+	max-width: 50px;
+	width: 100%;
+	height: 50px;
+	border: 2px dashed black;
+	background-color: grey;
+	border-radius: 50%;
+	position: relative;
+	top: 13px;
+	left: 13px;
+	display: inline-block;
+}
+.circle__small-circle {
+	max-width: 30px;
+	width: 100%;
+	height: 30px;
+	border: 1px solid black;
+	border-radius: 50%;
+	display: inline-block;
+	position: relative;
+	top: 8px;
+	left: 8px;
+	background-color: yellow;
+}
+
+.wheels__wheel {
+	max-width: 80px;
+	width: 100%;
+	height: 80px;
+	border: 2px dashed rgb(173, 166, 166);
+	border-radius: 50%;
+	position: relative;
+	background-color: rgb(29, 27, 27);
+	display: inline-block;
+	bottom: -65px;
+	left: -36px;
+	margin-right: 358px;
+}
+.wheels__wheel:last-child {
+	margin-right: 0px;
+}
