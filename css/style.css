@@ -97,6 +97,9 @@ body {
 	left: 0;
 	top: 100%;
 }
+.header__sub-list_row > li {
+	position: relative;
+}
 .header__sub-list > li {
 	display: inline-block;
 }
