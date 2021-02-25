@@ -97,10 +97,8 @@ body {
 	left: 0;
 	top: 100%;
 }
-.header__sub-list_row > li {
-	position: relative;
-}
 .header__sub-list > li {
+	position: relative;
 	display: inline-block;
 }
 .header__sub-list li {
@@ -182,7 +180,7 @@ body {
 	max-width: 1920px;
 	min-width: 725px;
 	height: 918px;
-	background: url('../img/sun.svg') 1350px 40px/30% 30% no-repeat, url("../img/gorod.png") center/cover no-repeat;
+	background: url("../img/sun.svg") 1350px 40px/30% 30% no-repeat, url("../img/gorod.png") center/cover no-repeat;
 	position: relative;
 }
 
